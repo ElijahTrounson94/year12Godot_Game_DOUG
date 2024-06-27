@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd7qkc0o7uqf7"]
+
+[ext_resource type="PackedScene" uid="uid://crltg1wf2vbjb" path="res://playerFPS.tscn" id="1_ef75w"]
+[ext_resource type="PackedScene" uid="uid://x6xf3stilgnh" path="res://DOUG.blend" id="2_rguaw"]
+
+[node name="Testworld" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_ef75w")]
+
+[node name="DOUG" parent="." instance=ExtResource("2_rguaw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.86426, -1.19209e-07, 1.26821)

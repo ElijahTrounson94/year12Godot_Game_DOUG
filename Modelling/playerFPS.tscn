@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://crltg1wf2vbjb"]
+
+[ext_resource type="Script" path="res://controller.gd" id="1_l5rtf"]
+[ext_resource type="Texture2D" uid="uid://dybe3whvx8plp" path="res://colta0.png" id="2_pun5y"]
+[ext_resource type="Texture2D" uid="uid://ce21n6dax5fkq" path="res://crosshair.png" id="3_r8m4h"]
+[ext_resource type="Texture2D" uid="uid://bqe467l7g7skx" path="res://20197.png" id="4_h4cpg"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eb2i3"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58325, 0)
+script = ExtResource("1_l5rtf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_eb2i3")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+target_position = Vector3(0, -3, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer"]
+offset_left = 733.0
+offset_top = 413.0
+offset_right = 816.0
+offset_bottom = 512.0
+scale = Vector2(5.76842, 6.19847)
+texture = ExtResource("2_pun5y")
+
+[node name="Pistol crosshair" type="CanvasLayer" parent="."]
+
+[node name="Pistol crosshair" type="TextureRect" parent="Pistol crosshair"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_r8m4h")
+
+[node name="shotgun crosshair" type="CanvasLayer" parent="."]
+
+[node name="shotgun crosshair" type="TextureRect" parent="shotgun crosshair"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = 163.0
+offset_right = 256.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_h4cpg")
