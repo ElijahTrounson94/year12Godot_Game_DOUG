@@ -7,6 +7,7 @@ extends CharacterBody3D
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var jump_speed = 5
 
+@onready var sprite = $Camera3D/CanvasLayer/AnimatedSprite2D
 @onready var crosshairImage = $"Pistol crosshair/Pistol crosshair"
 
 @onready var ray = $Camera3D/RayCast3D
@@ -57,5 +58,6 @@ func _input(event):
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x,-1,1)
-		
-		
+	
+	if(event.is_action_pressed("shoot")):
+		sprite.play("shoot")

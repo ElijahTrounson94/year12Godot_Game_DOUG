@@ -1,11 +1,53 @@
-[gd_scene load_steps=6 format=3 uid="uid://crltg1wf2vbjb"]
+[gd_scene load_steps=12 format=3 uid="uid://crltg1wf2vbjb"]
 
 [ext_resource type="Script" path="res://controller.gd" id="1_l5rtf"]
 [ext_resource type="Texture2D" uid="uid://dybe3whvx8plp" path="res://colta0.png" id="2_pun5y"]
+[ext_resource type="Texture2D" uid="uid://clb0tfpvxn8v4" path="res://coltb0.png" id="3_44gh0"]
 [ext_resource type="Texture2D" uid="uid://ce21n6dax5fkq" path="res://crosshair.png" id="3_r8m4h"]
+[ext_resource type="Texture2D" uid="uid://bcgvhw135nalr" path="res://colfa0.png" id="4_3xks7"]
 [ext_resource type="Texture2D" uid="uid://bqe467l7g7skx" path="res://20197.png" id="4_h4cpg"]
+[ext_resource type="Texture2D" uid="uid://5ee0i1ixhdjq" path="res://coltd0.png" id="5_cj2d1"]
+[ext_resource type="Texture2D" uid="uid://bmdvomc4dka2u" path="res://colte0.png" id="6_6lnvc"]
+[ext_resource type="Texture2D" uid="uid://bjwvcdq06o674" path="res://coltc0.png" id="7_ve08h"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eb2i3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dghge"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pun5y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pun5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_44gh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3xks7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6lnvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cj2d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ve08h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pun5y")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 24.0
+}]
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58325, 0)
@@ -24,13 +66,13 @@ target_position = Vector3(0, -3, 0)
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
 follow_viewport_enabled = true
 
-[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer"]
-offset_left = 733.0
-offset_top = 413.0
-offset_right = 816.0
-offset_bottom = 512.0
-scale = Vector2(5.76842, 6.19847)
-texture = ExtResource("2_pun5y")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Camera3D/CanvasLayer"]
+position = Vector2(1042, 696)
+scale = Vector2(6.81386, 6.95101)
+sprite_frames = SubResource("SpriteFrames_dghge")
+animation = &"shoot"
+frame = 6
+frame_progress = 1.0
 
 [node name="Pistol crosshair" type="CanvasLayer" parent="."]
 
@@ -45,9 +87,11 @@ grow_vertical = 2
 texture = ExtResource("3_r8m4h")
 
 [node name="shotgun crosshair" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="shotgun crosshair" type="TextureRect" parent="shotgun crosshair"]
-anchors_preset = -1
+visible = false
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
