@@ -5,7 +5,7 @@ extends CharacterBody3D
 @export var mouse_sensitivity = 0.003
 @onready var camera = $Camera3D
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-@export var jump_speed = 5
+
 
 @onready var sprite = $Camera3D/CanvasLayer/AnimatedSprite2D
 @onready var crosshairImage = $"Pistol crosshair/Pistol crosshair"
@@ -21,8 +21,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0
 		velocity.z = 0
-	if is_on_floor() and Input.is_action_just_pressed("ui_accept"):
-		velocity.y = jump_speed
+	
 	move_and_slide()
 	
 	if ray.is_colliding():
@@ -47,12 +46,9 @@ func check_collisions():
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		
-		crosshairImage.texture = load("res://crosshair.png");
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		
-		crosshairImage.texture = load("res://20197.png");
+	
 func _input(event):
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * mouse_sensitivity)
