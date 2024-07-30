@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bqijfsy4nui3s"]
+
+[ext_resource type="Texture2D" uid="uid://bkv8pqsdqiihy" path="res://wall70_3.png" id="1_bnfyp"]
+
+[resource]
+albedo_texture = ExtResource("1_bnfyp")
+uv1_scale = Vector3(108.07, 122.49, 1)
+uv1_offset = Vector3(0, 0.005, 0)
+uv2_scale = Vector3(1.035, 1.035, 1.035)
+texture_filter = 0

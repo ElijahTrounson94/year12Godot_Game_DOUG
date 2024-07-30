@@ -1,346 +1,353 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2gb82nl0nhbq"]
+[gd_scene load_steps=5 format=3 uid="uid://c2gb82nl0nhbq"]
 
 [ext_resource type="PackedScene" uid="uid://x6xf3stilgnh" path="res://DOUG.blend" id="1_onq30"]
+[ext_resource type="Material" uid="uid://bqijfsy4nui3s" path="res://floor.tres" id="2_8e3pd"]
 [ext_resource type="Material" uid="uid://dk8ephnt4i2dl" path="res://techwall.tres" id="2_j04lx"]
 [ext_resource type="Material" uid="uid://caujpg8i0f5vj" path="res://greenwall.tres" id="3_w3hd5"]
 
 [node name="DOUG" instance=ExtResource("1_onq30")]
 
-[node name="outerwall_001" parent="." index="2"]
-material_override = ExtResource("2_j04lx")
-
-[node name="outerwall_002" parent="." index="3"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall" parent="." index="4"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_024" parent="." index="5"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_025" parent="." index="6"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_026" parent="." index="7"]
-material_override = ExtResource("2_j04lx")
-
-[node name="secretDoor" parent="." index="8"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_027" parent="." index="9"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_028" parent="." index="10"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_029" parent="." index="11"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_030" parent="." index="12"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_031" parent="." index="13"]
-material_override = ExtResource("2_j04lx")
-
-[node name="wall_032" parent="." index="14"]
-material_override = ExtResource("2_j04lx")
+[node name="floor" parent="." index="0"]
+material_override = ExtResource("2_8e3pd")
 
-[node name="wall_033" parent="." index="15"]
+[node name="outerwall_001" parent="." index="1"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_034" parent="." index="16"]
+[node name="outerwall_002" parent="." index="2"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_035" parent="." index="17"]
+[node name="wall" parent="." index="3"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_036" parent="." index="18"]
+[node name="wall_024" parent="." index="4"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_037" parent="." index="19"]
+[node name="wall_025" parent="." index="5"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_038" parent="." index="20"]
+[node name="wall_026" parent="." index="6"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_039" parent="." index="21"]
+[node name="secretDoor" parent="." index="7"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_040" parent="." index="22"]
+[node name="wall_027" parent="." index="8"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_041" parent="." index="23"]
+[node name="wall_028" parent="." index="9"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_042" parent="." index="24"]
+[node name="wall_029" parent="." index="10"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_043" parent="." index="25"]
+[node name="wall_030" parent="." index="11"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_044" parent="." index="26"]
+[node name="wall_031" parent="." index="12"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_045" parent="." index="27"]
+[node name="wall_032" parent="." index="13"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_046" parent="." index="28"]
+[node name="wall_033" parent="." index="14"]
 material_override = ExtResource("2_j04lx")
 
-[node name="SecretDoor" parent="." index="29"]
+[node name="wall_034" parent="." index="15"]
 material_override = ExtResource("2_j04lx")
 
-[node name="curvedwalls_001" parent="." index="31"]
+[node name="wall_035" parent="." index="16"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_047" parent="." index="32"]
+[node name="wall_036" parent="." index="17"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_048" parent="." index="33"]
+[node name="wall_037" parent="." index="18"]
 material_override = ExtResource("2_j04lx")
 
-[node name="curvedwalls" parent="." index="34"]
+[node name="wall_038" parent="." index="19"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_001" parent="." index="36"]
+[node name="wall_039" parent="." index="20"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_002" parent="." index="38"]
+[node name="wall_040" parent="." index="21"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_003" parent="." index="39"]
+[node name="wall_041" parent="." index="22"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_004" parent="." index="40"]
+[node name="wall_042" parent="." index="23"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_005" parent="." index="41"]
+[node name="wall_043" parent="." index="24"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_006" parent="." index="42"]
+[node name="wall_044" parent="." index="25"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_007" parent="." index="43"]
+[node name="wall_045" parent="." index="26"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_008" parent="." index="44"]
+[node name="wall_046" parent="." index="27"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_009" parent="." index="45"]
+[node name="SecretDoor" parent="." index="28"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_010" parent="." index="46"]
+[node name="curvedwalls_001" parent="." index="30"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_011" parent="." index="47"]
+[node name="wall_047" parent="." index="31"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_061" parent="." index="48"]
+[node name="wall_048" parent="." index="32"]
 material_override = ExtResource("2_j04lx")
 
-[node name="outerwall" parent="." index="49"]
+[node name="curvedwalls" parent="." index="33"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_012" parent="." index="50"]
+[node name="wall_001" parent="." index="35"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_013" parent="." index="51"]
+[node name="wall_002" parent="." index="37"]
 material_override = ExtResource("2_j04lx")
 
-[node name="rampwall" parent="." index="54"]
+[node name="wall_003" parent="." index="38"]
 material_override = ExtResource("2_j04lx")
 
-[node name="rampwall_001" parent="." index="55"]
+[node name="wall_004" parent="." index="39"]
 material_override = ExtResource("2_j04lx")
 
-[node name="bridgewall" parent="." index="58"]
+[node name="wall_005" parent="." index="40"]
 material_override = ExtResource("2_j04lx")
 
-[node name="bridgewall_001" parent="." index="59"]
+[node name="wall_006" parent="." index="41"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_014" parent="." index="61"]
+[node name="wall_007" parent="." index="42"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_015" parent="." index="62"]
+[node name="wall_008" parent="." index="43"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_016" parent="." index="63"]
+[node name="wall_009" parent="." index="44"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_017" parent="." index="65"]
+[node name="wall_010" parent="." index="45"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_018" parent="." index="66"]
+[node name="wall_011" parent="." index="46"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_019" parent="." index="67"]
+[node name="wall_061" parent="." index="47"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_020" parent="." index="68"]
+[node name="outerwall" parent="." index="48"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_021" parent="." index="69"]
+[node name="wall_012" parent="." index="49"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_022" parent="." index="70"]
+[node name="wall_013" parent="." index="50"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_023" parent="." index="71"]
+[node name="rampwall" parent="." index="53"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_049" parent="." index="72"]
+[node name="rampwall_001" parent="." index="54"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_050" parent="." index="73"]
+[node name="bridgewall" parent="." index="57"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_051" parent="." index="74"]
+[node name="bridgewall_001" parent="." index="58"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_052" parent="." index="75"]
+[node name="wall_014" parent="." index="60"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_053" parent="." index="76"]
+[node name="wall_015" parent="." index="61"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_054" parent="." index="77"]
+[node name="wall_016" parent="." index="62"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_055" parent="." index="78"]
+[node name="wall_017" parent="." index="64"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_056" parent="." index="79"]
+[node name="wall_018" parent="." index="65"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_057" parent="." index="80"]
+[node name="wall_019" parent="." index="66"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_058" parent="." index="81"]
+[node name="wall_020" parent="." index="67"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_004" parent="." index="82"]
+[node name="wall_021" parent="." index="68"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance" parent="." index="83"]
+[node name="wall_022" parent="." index="69"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_059" parent="." index="84"]
+[node name="wall_023" parent="." index="70"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_001" parent="." index="85"]
+[node name="wall_049" parent="." index="71"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_002" parent="." index="86"]
+[node name="wall_050" parent="." index="72"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellwall" parent="." index="87"]
+[node name="wall_051" parent="." index="73"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellwall_001" parent="." index="88"]
+[node name="wall_052" parent="." index="74"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_003" parent="." index="89"]
+[node name="wall_053" parent="." index="75"]
 material_override = ExtResource("2_j04lx")
 
-[node name="wall_060" parent="." index="90"]
+[node name="wall_054" parent="." index="76"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_005" parent="." index="91"]
+[node name="wall_055" parent="." index="77"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellwall_002" parent="." index="92"]
+[node name="wall_056" parent="." index="78"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_006" parent="." index="93"]
+[node name="wall_057" parent="." index="79"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellentrance_007" parent="." index="94"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellentrance_008" parent="." index="95"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_003" parent="." index="96"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_004" parent="." index="97"]
+[node name="wall_058" parent="." index="80"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellentrance_009" parent="." index="98"]
+[node name="cellentrance_004" parent="." index="81"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellwall_005" parent="." index="99"]
+[node name="cellentrance" parent="." index="82"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellentrance_010" parent="." index="100"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_006" parent="." index="101"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellentrance_011" parent="." index="102"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_015" parent="." index="103"]
+[node name="wall_059" parent="." index="83"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellentrance_012" parent="." index="104"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_007" parent="." index="105"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellentrance_013" parent="." index="106"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_008" parent="." index="107"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellentrance_014" parent="." index="108"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_009" parent="." index="109"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellentrance_015" parent="." index="110"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_010" parent="." index="111"]
+[node name="cellentrance_001" parent="." index="84"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellentrance_016" parent="." index="112"]
+[node name="cellentrance_002" parent="." index="85"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall" parent="." index="86"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_001" parent="." index="87"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_003" parent="." index="88"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="wall_060" parent="." index="89"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_005" parent="." index="90"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_002" parent="." index="91"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_006" parent="." index="92"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_007" parent="." index="93"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_017" parent="." index="113"]
+[node name="cellentrance_008" parent="." index="94"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_003" parent="." index="95"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_004" parent="." index="96"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_009" parent="." index="97"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_005" parent="." index="98"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_010" parent="." index="99"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_006" parent="." index="100"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_011" parent="." index="101"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_015" parent="." index="102"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_012" parent="." index="103"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_007" parent="." index="104"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_013" parent="." index="105"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_008" parent="." index="106"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_014" parent="." index="107"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_009" parent="." index="108"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_015" parent="." index="109"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_010" parent="." index="110"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_016" parent="." index="111"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellwall_011" parent="." index="114"]
+[node name="cellentrance_017" parent="." index="112"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_011" parent="." index="113"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_018" parent="." index="114"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_012" parent="." index="115"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_019" parent="." index="116"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_013" parent="." index="117"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellentrance_020" parent="." index="118"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="cellwall_014" parent="." index="119"]
+material_override = ExtResource("3_w3hd5")
+
+[node name="end of cell block" parent="." index="120"]
 material_override = ExtResource("2_j04lx")
 
-[node name="cellentrance_018" parent="." index="115"]
-material_override = ExtResource("2_j04lx")
-
-[node name="cellwall_012" parent="." index="116"]
+[node name="largecellwall" parent="." index="121"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellentrance_019" parent="." index="117"]
+[node name="largecellwall_001" parent="." index="122"]
 material_override = ExtResource("3_w3hd5")
 
-[node name="cellwall_013" parent="." index="118"]
-material_override = ExtResource("3_w3hd5")
-
-[node name="cellentrance_020" parent="." index="119"]
-material_override = ExtResource("3_w3hd5")
-
-[node name="cellwall_014" parent="." index="120"]
-material_override = ExtResource("3_w3hd5")
-
-[node name="end of cell block" parent="." index="121"]
-material_override = ExtResource("2_j04lx")
-
-[node name="largecellwall" parent="." index="122"]
-material_override = ExtResource("3_w3hd5")
-
-[node name="largecellwall_001" parent="." index="123"]
-material_override = ExtResource("3_w3hd5")
+[node name="floor_001" parent="." index="124"]
+material_override = ExtResource("2_8e3pd")

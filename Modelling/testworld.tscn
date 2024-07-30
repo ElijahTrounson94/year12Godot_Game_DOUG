@@ -8,5 +8,6 @@
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_ef75w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32107, 0)
 
 [node name="DOUG2" parent="." instance=ExtResource("2_2b878")]
