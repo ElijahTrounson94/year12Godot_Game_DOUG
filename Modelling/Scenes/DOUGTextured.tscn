@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2gb82nl0nhbq"]
 
 [ext_resource type="PackedScene" uid="uid://x6xf3stilgnh" path="res://DOUG.blend" id="1_onq30"]
-[ext_resource type="Material" uid="uid://bqijfsy4nui3s" path="res://floor.tres" id="2_8e3pd"]
-[ext_resource type="Material" uid="uid://dk8ephnt4i2dl" path="res://techwall.tres" id="2_j04lx"]
-[ext_resource type="Material" uid="uid://caujpg8i0f5vj" path="res://greenwall.tres" id="3_w3hd5"]
+[ext_resource type="Material" uid="uid://bqijfsy4nui3s" path="res://Materials/floor.tres" id="2_8e3pd"]
+[ext_resource type="Material" uid="uid://dk8ephnt4i2dl" path="res://Materials/techwall.tres" id="2_j04lx"]
+[ext_resource type="Material" uid="uid://caujpg8i0f5vj" path="res://Materials/greenwall.tres" id="3_w3hd5"]
 
 [node name="DOUG" instance=ExtResource("1_onq30")]
 

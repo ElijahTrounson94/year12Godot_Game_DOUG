@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dd7qkc0o7uqf7"]
 
-[ext_resource type="PackedScene" uid="uid://crltg1wf2vbjb" path="res://playerFPS.tscn" id="1_ef75w"]
-[ext_resource type="PackedScene" uid="uid://c2gb82nl0nhbq" path="res://DOUGTextured.tscn" id="2_2b878"]
+[ext_resource type="PackedScene" uid="uid://crltg1wf2vbjb" path="res://Scenes/playerFPS.tscn" id="1_ef75w"]
+[ext_resource type="PackedScene" uid="uid://c2gb82nl0nhbq" path="res://Scenes/DOUGTextured.tscn" id="2_2b878"]
 
 [node name="Testworld" type="Node3D"]
 
