@@ -350,4 +350,5 @@ material_override = ExtResource("3_w3hd5")
 material_override = ExtResource("3_w3hd5")
 
 [node name="floor_001" parent="." index="124"]
+transform = Transform3D(3.30684, 0, 0, 0, 3.30684, 0, 0, 0, 3.30684, -0.211105, 2.77333, 22.1659)
 material_override = ExtResource("2_8e3pd")
