@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2gb82nl0nhbq"]
+[gd_scene load_steps=6 format=3 uid="uid://c2gb82nl0nhbq"]
 
 [ext_resource type="PackedScene" uid="uid://x6xf3stilgnh" path="res://DOUG.blend" id="1_onq30"]
 [ext_resource type="Material" uid="uid://bqijfsy4nui3s" path="res://Materials/floor.tres" id="2_8e3pd"]
 [ext_resource type="Material" uid="uid://dk8ephnt4i2dl" path="res://Materials/techwall.tres" id="2_j04lx"]
 [ext_resource type="Material" uid="uid://caujpg8i0f5vj" path="res://Materials/greenwall.tres" id="3_w3hd5"]
+[ext_resource type="PackedScene" uid="uid://bmoyqhli0qkyl" path="res://Scenes/node_3d.tscn" id="5_7nbp5"]
 
 [node name="DOUG" instance=ExtResource("1_onq30")]
 
@@ -352,3 +353,6 @@ material_override = ExtResource("3_w3hd5")
 [node name="floor_001" parent="." index="124"]
 transform = Transform3D(3.30684, 0, 0, 0, 3.30684, 0, 0, 0, 3.30684, -0.211105, 2.77333, 22.1659)
 material_override = ExtResource("2_8e3pd")
+
+[node name="Node3D" parent="." index="125" instance=ExtResource("5_7nbp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 17)

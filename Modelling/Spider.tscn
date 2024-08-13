@@ -1,0 +1,79 @@
+[gd_scene load_steps=13 format=3 uid="uid://c72ug71gdbueh"]
+
+[ext_resource type="Texture2D" uid="uid://d0fod0nk26yc8" path="res://Spider/gaysa1.png" id="1_0toxj"]
+[ext_resource type="Texture2D" uid="uid://bmayequ4wyps3" path="res://Spider/gayrf0.png" id="2_frrcl"]
+[ext_resource type="Texture2D" uid="uid://bx548d1tbgcg2" path="res://Spider/gayre0.png" id="3_aiu6g"]
+[ext_resource type="Texture2D" uid="uid://be12wbm7bv75" path="res://Spider/gayrd0.png" id="4_s5ynj"]
+[ext_resource type="Texture2D" uid="uid://buvt5ih2j36kw" path="res://Spider/gayrc0.png" id="5_ej808"]
+[ext_resource type="Texture2D" uid="uid://bfk7ugdqju5io" path="res://Spider/gayrb0.png" id="6_hmbdl"]
+[ext_resource type="Texture2D" uid="uid://c7qdj7lo85w7g" path="res://Spider/gayra0.png" id="7_51t07"]
+[ext_resource type="Texture2D" uid="uid://cvx18y8o720om" path="res://Spider/gayse1.png" id="8_0xbku"]
+[ext_resource type="Texture2D" uid="uid://bodam1dnqf5v4" path="res://Spider/gaysd1.png" id="9_0oyeq"]
+[ext_resource type="Texture2D" uid="uid://dqxh2s6punt8b" path="res://Spider/gaysc1.png" id="10_qvk3g"]
+[ext_resource type="Texture2D" uid="uid://dx6t2m1m6djsy" path="res://Spider/gaysb1.png" id="11_xndrv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8qqk5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0toxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_frrcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_aiu6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_s5ynj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ej808")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hmbdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_51t07")
+}],
+"loop": true,
+"name": &"death",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_0xbku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0toxj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_0oyeq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qvk3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xndrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0toxj")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_8qqk5")
+animation = &"death"
+frame_progress = 0.4938

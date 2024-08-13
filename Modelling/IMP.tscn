@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cq5d3wij0huy0"]
+[gd_scene load_steps=17 format=3 uid="uid://cq5d3wij0huy0"]
 
 [ext_resource type="Texture2D" uid="uid://bq61rvefvrehx" path="res://ImpSpikes/tro5i0.png" id="1_y6ilx"]
 [ext_resource type="Texture2D" uid="uid://dgpfrdknrrblb" path="res://ImpSpikes/tro5h1.png" id="2_yqxfk"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://s2pylj52t80j" path="res://ImpSpikes/tro5g1.png" id="11_rj8hx"]
 [ext_resource type="Texture2D" uid="uid://dg7sncaioxspe" path="res://ImpSpikes/tro5b1.png" id="12_qrytb"]
 [ext_resource type="Texture2D" uid="uid://h4jpifonpgiw" path="res://ImpSpikes/tro5c1.png" id="13_xjltq"]
+[ext_resource type="Script" path="res://imp.gd" id="14_vb4j3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8xt1y"]
 animations = [{
@@ -62,7 +63,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack",
-"speed": 3.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -79,15 +80,27 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 3.0
+"speed": 2.5
 }]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_06p0a"]
+height = 1.3
+radius = 0.44
+
+[node name="Imp" type="CharacterBody3D" groups=["Enemy"]]
+script = ExtResource("14_vb4j3")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(0.999756, 0, 0, 0, 0.999756, 0, 0, 0, 0.999756, 0, 0, 0)
-billboard = 1
+transform = Transform3D(2.29, 0, 0, 0, 2.29, 0, 0, 0, 2.29, 0, 0, 0)
+billboard = 2
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_8xt1y")
-animation = &"Death"
-frame_progress = 0.618107
+animation = &"Idle"
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+top_level = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_06p0a")

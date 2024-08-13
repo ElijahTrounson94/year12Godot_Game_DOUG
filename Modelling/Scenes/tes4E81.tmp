@@ -13,25 +13,16 @@ polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Arr
 script = ExtResource("1_bmn6w")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-light_energy = 0.0
-directional_shadow_split_1 = 0.0
-directional_shadow_split_2 = 0.0
-directional_shadow_split_3 = 0.0
-directional_shadow_fade_start = 0.0
-directional_shadow_max_distance = 0.0
-directional_shadow_pancake_size = 0.0
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_ef75w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.97595, 1.32107, 59.2872)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32107, 0)
 
 [node name="Node3D" parent="." instance=ExtResource("3_3cs17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.279377, 0.71458, -3.74818)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.279377, 0.817405, -3.74818)
 
 [node name="Imp" parent="." instance=ExtResource("3_3cs17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.922134, 2.88358)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." groups=["Nav"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0886645, -0.0248075, 0.182913)
 navigation_mesh = SubResource("NavigationMesh_bqiec")
 
 [node name="DOUG2" parent="NavigationRegion3D" instance=ExtResource("2_2b878")]
