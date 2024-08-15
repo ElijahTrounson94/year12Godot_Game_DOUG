@@ -53,9 +53,11 @@ animations = [{
 script = ExtResource("1_l5rtf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.998151, 0)
 shape = SubResource("CapsuleShape3D_eb2i3")
 
 [node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.998151, 0)
 current = true
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
