@@ -1,6 +1,7 @@
+
 extends CharacterBody3D
 
-var speed = 3
+var speed = 5
 var accel = 8
 
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
@@ -18,21 +19,3 @@ func _physics_process(delta):
 
 func update_target_location(target_location):
 	nav_agent.target_position = target_location
-#
-	#nav_agent.target_position = player.global_transform.origin
-	#
-	#var direction = nav_agent.get_next_path_position()
-	#
-	#"""
-	#if not is_on_floor():
-		#direction.y -= 9.8*delta;
-	#else:
-		#direction.y -= 2;
-	#"""
-	#
-#
-	#
-	#
-	#velocity = velocity.move_toward(direction * speed , accel * delta);
-	#
-	#move_and_slide();

@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://c72ug71gdbueh"]
+[gd_scene load_steps=15 format=3 uid="uid://c72ug71gdbueh"]
 
 [ext_resource type="Texture2D" uid="uid://d0fod0nk26yc8" path="res://Spider/gaysa1.png" id="1_0toxj"]
+[ext_resource type="Script" path="res://Spider.gd" id="1_1oocr"]
 [ext_resource type="Texture2D" uid="uid://bmayequ4wyps3" path="res://Spider/gayrf0.png" id="2_frrcl"]
 [ext_resource type="Texture2D" uid="uid://bx548d1tbgcg2" path="res://Spider/gayre0.png" id="3_aiu6g"]
 [ext_resource type="Texture2D" uid="uid://be12wbm7bv75" path="res://Spider/gayrd0.png" id="4_s5ynj"]
@@ -11,6 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://bodam1dnqf5v4" path="res://Spider/gaysd1.png" id="9_0oyeq"]
 [ext_resource type="Texture2D" uid="uid://dqxh2s6punt8b" path="res://Spider/gaysc1.png" id="10_qvk3g"]
 [ext_resource type="Texture2D" uid="uid://dx6t2m1m6djsy" path="res://Spider/gaysb1.png" id="11_xndrv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ylbk"]
+size = Vector3(0.656754, 0.359558, 0.631729)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8qqk5"]
 animations = [{
@@ -69,11 +73,20 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Node3D" type="Node3D"]
+[node name="Spider" type="CharacterBody3D"]
+script = ExtResource("1_1oocr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125198, -0.310272, -0.008461)
+shape = SubResource("BoxShape3D_1ylbk")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 billboard = 2
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_8qqk5")
-animation = &"death"
-frame_progress = 0.4938
+animation = &"walk"
+autoplay = "walk"
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="NavigationAgent3D"]
