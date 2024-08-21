@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+@export var bullet : PackedScene
 @export var speed = 5
 @export var sprint = 8
 @export var mouse_sensitivity = 0.003
@@ -57,3 +58,13 @@ func _input(event):
 	
 	if(event.is_action_pressed("shoot")):
 		sprite.play("shoot")
+		
+		var new_bullet = bullet.instantiate()
+		
+		get_parent().add_child(new_bullet)
+		new_bullet.global_position = $Camera3D/BulletSpawn.global_position
+		new_bullet.global_rotation = camera.global_rotation
+		
+	
+
+

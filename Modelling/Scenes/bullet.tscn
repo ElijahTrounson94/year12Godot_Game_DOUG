@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cenbdv4nr072p"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_xan0b"]
+[ext_resource type="Texture2D" uid="uid://ljb8abbai7i3" path="res://brad pitt bullet.PNG" id="2_smjc3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_k3uwi"]
+
+[node name="Bullet" type="CharacterBody3D"]
+script = ExtResource("1_xan0b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("SphereShape3D_k3uwi")
+disabled = true
+
+[node name="AnimatedSprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+visible = false
+cast_shadow = 0
+billboard = 1
+texture = ExtResource("2_smjc3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("SphereShape3D_k3uwi")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_body_entered"]

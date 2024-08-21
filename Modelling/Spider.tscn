@@ -40,9 +40,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_51t07")
 }],
-"loop": true,
-"name": &"death",
-"speed": 8.0
+"loop": false,
+"name": &"Death",
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -73,8 +73,9 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Spider" type="CharacterBody3D"]
+[node name="Spider" type="CharacterBody3D" node_paths=PackedStringArray("death_animation") groups=["Enemy"]]
 script = ExtResource("1_1oocr")
+death_animation = NodePath("AnimatedSprite3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125198, -0.310272, -0.008461)
@@ -84,7 +85,7 @@ shape = SubResource("BoxShape3D_1ylbk")
 billboard = 2
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_8qqk5")
-animation = &"walk"
+animation = &"Death"
 autoplay = "walk"
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

@@ -1,0 +1,35 @@
+Pointlight RingLight
+{
+Color 1.0 1.0 1.0
+Subtractive 1
+Size 32
+}
+
+Pointlight LRingLight
+{
+Color 1.0 1.0 1.0
+Subtractive 1
+Size 64
+}
+
+Pointlight LaserLight
+{
+Color 1.0 1.0 1.0
+Subtractive 1
+Size 32
+}
+
+Object GateKeeperBlast1
+{
+Frame RINGB { Light RingLight }
+}
+
+Object GateKeeperBlast2
+{
+Frame RINGA { Light LRingLight }
+}
+
+Object Laser
+{
+Frame SLGKA { Light LaserLight }
+}

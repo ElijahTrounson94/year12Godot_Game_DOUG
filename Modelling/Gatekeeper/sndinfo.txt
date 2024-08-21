@@ -1,0 +1,30 @@
+//from source guardin, modified by zrrion
+gate/sight see
+gate/attack fight
+gate/pain pain
+gate/death death
+FLAME FLAME
+
+//ID/Raven sounds, modified by zrrion
+spider/walk1 dsmetal
+spider/walk2 dsmetal1
+spider/walk3 dsmetal2
+$random spider/walk { spider/walk1 spider/walk2 spider/walk3 }
+gate/PLASMA1 DSPLAS1
+gate/PLASMA2 DSPLAS2
+$random gate/PLASMA { gate/PLASMA1 gate/PLASMA2 }
+gate/PLASMA3 DSPLAS3
+gate/PLASMA4 DSPLAS4
+$random gate/PLASMASHOT { gate/PLASMA3 gate/PLASMA4 }
+bodyfade BODYFADE
+
+//sounds from Activision's Netstorm
+fire fire
+IMPACT IMPACT
+
+//sounds by zrrion
+gate/active1 act1
+gate/active2 act2
+gate/active3 act3
+$random gate/active { gate/active1 gate/active2 gate/active3 }
+gate/yell yell

@@ -1,0 +1,26 @@
+08/12/2017 - MagicWazard:
+- A_CustomMissile was passing the value for Pitch to Aimflags; a value of 0 was assigned for Aimflags for all calls to A_CustomMissile.
+- Corrected spelling of "Grenade".
+- Replaced NULL with TNT1.
+- Converted sprites to PNG.
+
+08/15/2017 - Ozymandias81:
+- Crushed all PNG sprites, saved 50kbs circa
+- Fixed several code indentations (spaces between rows, trimmage, caps etc)
+- Added simplified inheritance for CubeTail#, PainTail#, Up#, Deathout and DSkulltail# actors
+- Replaced with +BRIGHT flags those actors which had BRIGHT defined inside all their rows (unnecessary)
+
+08/17/2017 - Doomedarchviledemon
+- Fixed the offset for frame GATEF3F7 to match frame GATEE3E7 so that when looking at the monster from the side it is not jittering
+- Reduced damage amounts of all the Gate Keeper's direct attacks
+- Added Black Clouds to the Laser attack to add more variety
+- Added the Gate Cube's ability to attack the player (Currently wip)
+- Added GLDEFS to some of the GateKeeper's projectiles
+
+03/17/2018 - Doomedarchviledemon
+- Made the Gate Keeper's Cubes have a small change of exploding and spawning small black clouds
+
+9/14/2020 - TheDoomedArchvile
+- Cleaned the sprites a little to get rid of some white pixles
+- Dark Lost Souls are no longer a Gatekeeper attack and instead spawns passively from the Shadow Cubes
+- Lowered the Dark Lost Soul's health and attack for balance

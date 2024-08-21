@@ -1,0 +1,7 @@
+Submitted: zrrion the insect
+Code: zrrion the insect, Doomedarchviledemon
+GLDefs: Doomedarchviledemon
+Sounds: zrrion the insect
+Sprites: Daniel, ID Software, Zrrion, Skulltag, Cutmanmike
+Sprite Edit: zrrion the insect
+Idea Base: Moloch, Source Guardian

@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-var speed = 3
+var speed = 2
 var accel = 8
 
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
@@ -18,6 +18,26 @@ func _physics_process(delta):
 
 func update_target_location(target_location):
 	nav_agent.target_position = target_location
+	
+@export var health: int = 100
+@export var death_animation: AnimatedSprite3D = null
+
+func take_damage(amount: int):
+	health -= amount
+	if health <= 0:
+		die()
+
+func die():
+	# Play death animation if it exists
+	if death_animation:
+		death_animation.play("Death")
+
+	# Queue the enemy for deletion after the animation finishes
+	# If there's no animation, delete it immediately
+	if death_animation:
+		await death_animation.animation_finished
+	queue_free()
+
 #
 	#nav_agent.target_position = player.global_transform.origin
 	#

@@ -351,7 +351,7 @@ material_override = ExtResource("3_w3hd5")
 material_override = ExtResource("3_w3hd5")
 
 [node name="floor_001" parent="." index="124"]
-transform = Transform3D(3.30684, 0, 0, 0, 3.30684, 0, 0, 0, 3.30684, -0.211105, 2.77333, 22.1659)
+transform = Transform3D(3.30684, 0, 0, 0, 3.30684, 0, 0, 0, 3.30684, 0.302727, 2.65054, 22.1659)
 material_override = ExtResource("2_8e3pd")
 
 [node name="CollisionShape3D" parent="floor_001/StaticBody3D" index="0"]
