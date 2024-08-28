@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dx6t2m1m6djsy" path="res://Spider/gaysb1.png" id="11_xndrv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1ylbk"]
-size = Vector3(0.656754, 0.359558, 0.631729)
+size = Vector3(0.249209, 0.381637, 0.278926)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8qqk5"]
 animations = [{
@@ -78,7 +78,7 @@ script = ExtResource("1_1oocr")
 death_animation = NodePath("AnimatedSprite3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125198, -0.310272, -0.008461)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00841742, -0.299232, 0.00130829)
 shape = SubResource("BoxShape3D_1ylbk")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]

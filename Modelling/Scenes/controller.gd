@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+@export var health : int = 100
 @export var bullet : PackedScene
 @export var speed = 5
 @export var sprint = 8
@@ -67,4 +68,15 @@ func _input(event):
 		
 	
 
+
+
+
+func _on_hitbox_body_entered(body):
+	if body.is_in_group("Enemy"):
+		health -= 25
+		$ProgressBar.value = health
+		if health <= 0:
+			get_tree().reload_current_scene()
+		pass
+	pass # Replace with function body.
 

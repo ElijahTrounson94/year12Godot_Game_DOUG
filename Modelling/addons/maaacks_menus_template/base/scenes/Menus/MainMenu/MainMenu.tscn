@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6k5nnpbypshi"]
+[gd_scene load_steps=8 format=3 uid="uid://c6k5nnpbypshi"]
 
 [ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scenes/Menus/MainMenu/MainMenu.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://hmx6o472ropw" path="res://addons/maaacks_menus_template/base/scenes/Menus/OptionsMenu/MasterOptionsMenuWithTabs.tscn" id="2_qvrrd"]
 [ext_resource type="PackedScene" uid="uid://t2dui8ppm3a4" path="res://addons/maaacks_menus_template/base/scenes/Credits/Credits.tscn" id="3_5dhvp"]
 [ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scripts/CaptureFocus.gd" id="4_l1ebe"]
 [ext_resource type="PackedScene" uid="uid://bkcsjsk2ciff" path="res://addons/maaacks_menus_template/base/scenes/MusicPlayers/BackgroundMusicPlayer.tscn" id="4_w8sbm"]
+[ext_resource type="Texture2D" uid="uid://bsajbm77ukxps" path="res://addons/maaacks_menus_template/base/scenes/Menus/MainMenu/DOOM guy-vmake.jpeg" id="6_7t4kk"]
 [ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scripts/UISoundController.gd" id="6_bs342"]
 
 [node name="MainMenu" type="Control"]
@@ -15,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
+game_scene_path = "res://Scenes/testworld.tscn"
 options_packed_scene = ExtResource("2_qvrrd")
 credits_packed_scene = ExtResource("3_5dhvp")
 
@@ -22,14 +24,20 @@ credits_packed_scene = ExtResource("3_5dhvp")
 script = ExtResource("6_bs342")
 
 [node name="BackgroundMusicPlayer" parent="." instance=ExtResource("4_w8sbm")]
+bus = &"Master"
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -156.0
+offset_top = -96.0
+offset_right = 192.0
+offset_bottom = 112.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("6_7t4kk")
 expand_mode = 1
 stretch_mode = 5
 
@@ -68,17 +76,17 @@ theme_override_constants/margin_top = 16
 [node name="TitlesContainer" type="VBoxContainer" parent="MenuContainer/VBoxContainer/TitlesMargin"]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="MenuContainer/VBoxContainer/TitlesMargin/TitlesContainer"]
+[node name="DOUG" type="Label" parent="MenuContainer/VBoxContainer/TitlesMargin/TitlesContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "Title"
+text = "DOUG"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SubTitle" type="Label" parent="MenuContainer/VBoxContainer/TitlesMargin/TitlesContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "Subtitle"
+text = "Leave None Alive"
 horizontal_alignment = 1
 vertical_alignment = 1
 

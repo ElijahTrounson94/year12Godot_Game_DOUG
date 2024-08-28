@@ -11,13 +11,20 @@ config_version=5
 [application]
 
 config/name="Modelling"
-run/main_scene="res://Scenes/testworld.tscn"
+run/main_scene="res://addons/maaacks_menus_template/base/scenes/Menus/MainMenu/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AppConfig="*res://addons/maaacks_menus_template/base/scenes/Autoloads/AppConfig.tscn"
+SceneLoader="*res://addons/maaacks_menus_template/base/scenes/Autoloads/SceneLoader.tscn"
+ProjectMusicController="*res://addons/maaacks_menus_template/base/scenes/Autoloads/ProjectMusicController.tscn"
+ProjectUISoundController="*res://addons/maaacks_menus_template/base/scenes/Autoloads/ProjectUISoundController.tscn"
+
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/maaacks_menus_template/plugin.cfg")
 
 [input]
 
@@ -61,6 +68,10 @@ shoot={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(93, 15),"global_position":Vector2(97, 56),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+
+[maaacks_menus_template]
+
+disable_plugin_dialogues=true
 
 [rendering]
 
