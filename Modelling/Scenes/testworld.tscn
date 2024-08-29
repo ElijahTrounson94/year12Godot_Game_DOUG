@@ -27,13 +27,13 @@ directional_shadow_max_distance = 0.0
 directional_shadow_pancake_size = 0.0
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_ef75w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.234974, 1.477, -19.8373)
+transform = Transform3D(-0.998053, 0, 0.0623724, 0, 1, 0, -0.0623724, 0, -0.998053, 0.234974, 1.477, -15.4241)
 
 [node name="Node3D" parent="." instance=ExtResource("3_3cs17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.279, 0.6, -3.748)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.279, 0.6, 8.77803)
 
 [node name="Imp" parent="." instance=ExtResource("3_3cs17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 2.884)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 10.4582)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." groups=["Nav"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0886645, -0.0248075, 0.182913)
@@ -49,16 +49,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.3429, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.848614, 0.929411, 11.1588)
 
 [node name="Imp2" parent="." instance=ExtResource("3_3cs17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70139, 0.830473, -3.85206)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70139, 0.830473, 3.15447)
 
 [node name="Imp3" parent="." instance=ExtResource("3_3cs17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.45826, 0.824957, -2.27206)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.45826, 0.824957, 6.91583)
 
 [node name="Spider" parent="." instance=ExtResource("5_j1duj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.82121, 0.655656, -1.38307)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.82121, 0.655656, 8.58651)
 
 [node name="Spider2" parent="." instance=ExtResource("5_j1duj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65724, 0.743709, -2.54835)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65724, 0.743709, 6.90577)
 
 [node name="Spider3" parent="." instance=ExtResource("5_j1duj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.731, 0.687797, 26.8555)
@@ -152,3 +152,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.7771, 0.713744, 3.6756)
 
 [node name="Spider18" parent="." instance=ExtResource("5_j1duj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.3308, 0.79547, 0.321424)
+
+[node name="Imp19" parent="." instance=ExtResource("3_3cs17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.44075, 0.852115, 58.861)
+
+[node name="Imp20" parent="." instance=ExtResource("3_3cs17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.90741, 0.889527, 59.1499)
+
+[node name="Imp21" parent="." instance=ExtResource("3_3cs17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.41186, 0.738207, 55.0769)
+
+[node name="Imp22" parent="." instance=ExtResource("3_3cs17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.84964, 0.953787, 51.2639)
+
+[node name="Imp23" parent="." instance=ExtResource("3_3cs17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.29632, 0.118748, 46.9021)
+
+[node name="Imp24" parent="." instance=ExtResource("3_3cs17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.56077, 0.820706, 47.2487)
+
+[node name="Spider19" parent="." instance=ExtResource("5_j1duj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8391, 0.925752, 59.0541)
+
+[node name="Spider20" parent="." instance=ExtResource("5_j1duj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.64247, 0.675609, 59.6318)
+
+[node name="Spider21" parent="." instance=ExtResource("5_j1duj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.81579, 0.604051, 54.8078)
+
+[node name="Spider22" parent="." instance=ExtResource("5_j1duj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.30128, 0.823851, 51.197)
+
+[node name="Spider23" parent="." instance=ExtResource("5_j1duj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.39351, 0.668057, 47.1241)

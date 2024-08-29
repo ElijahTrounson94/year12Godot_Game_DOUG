@@ -1,5 +1,5 @@
 extends CharacterBody3D
-
+@export var ammo : int = 6
 @export var health : int = 100
 @export var bullet : PackedScene
 @export var speed = 5
@@ -57,8 +57,10 @@ func _input(event):
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x,-1,1)
 	
-	if(event.is_action_pressed("shoot")):
+	if(event.is_action_pressed("shoot") and ammo >= 0):
 		sprite.play("shoot")
+		ammo -= 1
+	
 		
 		var new_bullet = bullet.instantiate()
 		
@@ -66,17 +68,23 @@ func _input(event):
 		new_bullet.global_position = $Camera3D/BulletSpawn.global_position
 		new_bullet.global_rotation = camera.global_rotation
 		
+		
 	
+	if(event.is_action_pressed("reload")):
+		$Camera3D/CanvasLayer/AnimatedSprite2D/AnimationPlayer.play("reload")
+		ammo = 6
+		
 
 
 
 
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Enemy"):
-		health -= 25
+		health -= 20
 		$ProgressBar.value = health
 		if health <= 0:
 			get_tree().reload_current_scene()
 		pass
 	pass # Replace with function body.
+
 
