@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dybe3whvx8plp" path="res://Texture/colta0.png" id="2_pun5y"]
 [ext_resource type="PackedScene" uid="uid://cenbdv4nr072p" path="res://Scenes/bullet.tscn" id="2_to3b2"]
 [ext_resource type="Texture2D" uid="uid://clb0tfpvxn8v4" path="res://Texture/coltb0.png" id="3_44gh0"]
-[ext_resource type="Texture2D" uid="uid://bdpxo5avkbgbc" path="res://New Piskel-1.png.png" id="3_g8hbi"]
+[ext_resource type="Texture2D" uid="uid://bdc4h6u50cpf8" path="res://HelmetOverlay.png" id="3_hm8v4"]
 [ext_resource type="Texture2D" uid="uid://bcgvhw135nalr" path="res://Texture/colfa0.png" id="4_3xks7"]
 [ext_resource type="Texture2D" uid="uid://bqe467l7g7skx" path="res://Texture/20197.png" id="4_h4cpg"]
 [ext_resource type="Texture2D" uid="uid://5ee0i1ixhdjq" path="res://Texture/coltd0.png" id="5_cj2d1"]
@@ -99,7 +99,7 @@ bullet = ExtResource("2_to3b2")
 [node name="NewPiskel-1_png" type="Sprite2D" parent="."]
 position = Vector2(956, 536)
 scale = Vector2(2.14158, 2.07665)
-texture = ExtResource("3_g8hbi")
+texture = ExtResource("3_hm8v4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.998151, 0)
@@ -169,7 +169,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.999372, 0)
 shape = SubResource("CapsuleShape3D_2bbdh")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-modulate = Color(0.116194, 0.529147, 0.546374, 1)
+modulate = Color(0.10133, 0.898449, 0.928121, 1)
 offset_left = 15.0
 offset_top = 228.0
 offset_right = 565.0

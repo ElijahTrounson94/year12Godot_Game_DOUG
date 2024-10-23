@@ -1,3 +1,4 @@
+#exporting variables
 extends CharacterBody3D
 @export var ammo : int = 6
 @export var health : int = 100
@@ -13,6 +14,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var crosshairImage = $"Pistol crosshair/Pistol crosshair"
 
 @onready var ray = $Camera3D/RayCast3D
+#character movement
 func _physics_process(delta):
 	velocity.y += -gravity * delta
 	var input_dir = Input.get_vector("left","right","up","down")
@@ -77,7 +79,7 @@ func _input(event):
 
 
 
-
+#player taking damage from enemies
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Enemy"):
 		health -= 20
